@@ -1,0 +1,23 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="list-service" attributes="positions">
+  <template>
+    <style>
+      :host {
+        display: none;
+      }
+    </style>
+    <core-ajax id="ajax" auto url="/hereiam/api/position.php" params='{"action":"LIST"}' on-core-response="{{positionsLoaded}}" handleAs="json"></core-ajax>
+  </template>
+  <script>
+    Polymer('list-service', {
+      created    : function () {
+        this.positions = [];
+      },
+      positionsLoaded: function () {
+        this.positions = this.$.ajax.response.data.splice(0);
+      }
+    });
+  </script>
+</polymer-element>ø

@@ -1,0 +1,8 @@
+{
+  "name"       : "codelandcz/hereiam",
+  "version"    : "0.0.1",
+  "description": "Here I Am! application",
+  "require"    : {
+    "symfony/yaml": "~2.5"
+  }
+}

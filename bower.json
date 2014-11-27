@@ -1,0 +1,14 @@
+{
+  "name"        : "HereIAm",
+  "version"     : "0.0.1",
+  "description" : "Here I Am! application",
+  "dependencies": {
+    "polymer"          : "Polymer/polymer#~0.5.1",
+    "google-map"       : "GoogleWebComponents/google-map#~0.4.0",
+    "geo-location"     : "ebidel/geo-location#~0.0.7",
+    "webcomponentsjs"  : "~0.5.1",
+    "core-ajax"        : "Polymer/core-ajax#~0.5.1",
+    "paper-input"      : "Polymer/paper-input#~0.5.1",
+    "paper-icon-button": "Polymer/paper-icon-button#~0.5.1"
+  }
+}
