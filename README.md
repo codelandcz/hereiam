@@ -10,7 +10,7 @@ Share your position with friends.
 
 - webserver
 - [PHP](http://php.net/)
-- [MYSQL](http://www.mysql.com)
+- [MySQL](http://www.mysql.com)
 - [Composer](https://getcomposer.org/)
 - [Bower](http://bower.io/)
 
