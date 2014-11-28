@@ -36,8 +36,8 @@
         display: none;
       }
     </style>
-    <core-ajax id="ajaxList" method="POST" url="/hereiam/api/position.php" params='{"action":"LIST", "lat":"{{lat}}", "lng":"{{lng}}", "name":"{{name}}"}' handleAs="json" on-core-response="{{handleList}}"></core-ajax>
-    <core-ajax auto id="ajaxPut" method="POST" url="/hereiam/api/position.php" params='{"action":"PUT", "lat":"{{lat}}", "lng":"{{lng}}", "name":"{{name}}"}' handleAs="json" on-core-response="{{handlePut}}"></core-ajax>
+    <core-ajax id="ajaxList" method="POST" url="../api/position.php" params='{"action":"LIST", "lat":"{{lat}}", "lng":"{{lng}}", "name":"{{name}}"}' handleAs="json" on-core-response="{{handleList}}"></core-ajax>
+    <core-ajax auto id="ajaxPut" method="POST" url="../api/position.php" params='{"action":"PUT", "lat":"{{lat}}", "lng":"{{lng}}", "name":"{{name}}"}' handleAs="json" on-core-response="{{handlePut}}"></core-ajax>
     <geo-location latitude="{{lat}}" longitude="{{lng}}" watchpos></geo-location>
 
     <core-drawer-panel id="drawerPanel">
